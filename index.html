@@ -1,366 +1,62 @@
-<!DOCTYPE html xmlns:svg="http://www.w3.org/2000/svg">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Documentation</title>
+  <title>RAK DOCUMENT CENTER</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
   <style>
-  /* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  105% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  105% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@-webkit-keyframes hvr-bob-float {
-  105% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob-float {
-  105% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-.card-body{
-  /* height: 300px !important; */
-}
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-</style>
+    .button {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #0746C6;
+      height: 60px;
+      width: 150px;
+      border-radius: 8px;
+    }
+    
+    .button:hover {
+      background-color: #0746C6;
+      color: white;
+    }
+    </style>
   <script src="assets/lib/js/jquery.min.js"></script>
   <script src="assets/lib/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container col-lg-7">
+<div class="container">
   <div class="row">
     <div class="col">
-      <h2 class="text-center text-secondary"><strong>WELCOME TO THE RAK DOCUMENT CENTER</strong></h2>
-      <p class="text-muted text-center display: flex mb-2">The RAKwireless Docs are a great place to explore our hardware, software and developer tools, and find
-          all the information you need to get started in your LoRa project!
-      </p>
-      <h4 class="mt-5 pt-2 mb-4 text-muted"><strong>LoRa Gateway</strong></h4>
-    </div>
+      <img src="assets/img/rak-blue-dark.svg" class="img-fluid">
+      <h1 class="text-center text-secondary"><strong>WELCOME TO RAK DOCUMENT CENTER</h2></strong>
+      <button class="button button mb-5" style="align-self: center;">Get Started Now</button>
   </div>
-  <div class="row">
-      <div class="col-lg-4 col-md-12 col-sm-6">
-          <div class="card text-center shadow mb-5 hvr-bob" >
-              <div class="card-body pt-0">
-                <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK2245-pi-hat.svg" alt="RAK2245">
-                <div>
-                    <h6 class="card-title">RAK2245 RPi HAT Edition - LoRaWAN™ Gateway Concentrator Module</h6>
-                </div>
-              </div>
+  <div class="row"> 
+      <div class="col-lg-3">
+          <div class="">
+            <h4><strong>Quick Start Guide</strong></h4>
+            <p class="text-secondary">A manual on how to set up your device for the first time and deploy with only its core functionality in mind.</p>
           </div>
       </div>
-      <div class="col-lg-4 col-md-12 col-sm-6">
-          <div class="card text-center shadow mb-5 hvr-bob" >
-              <div class="card-body pt-0">
-                <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK831.svg" alt="RAK831">
-                <div>
-                    <h6 class="card-title">RAK831 LoRaWAN™ Gateway Concentrator Module</h6>
-                </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-12 col-sm-6">
-          <div class="card text-center shadow mb-5 hvr-bob" >
-              <div class="card-body pt-0">
-                <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK2247.svg" alt="RAK2247">
-                <div>
-                    <h6 class="card-title">RAK2247 LoRaWAN™ Gateway Concentrator Module</h6>
-                </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-4 col-md-12 col-sm-6">
-        <div class="card text-center shadow mb-5 hvr-bob" >
-            <div class="card-body pt-0">
-              <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK833.svg" alt="RAK833">
-              <div>
-                  <h6 class="card-title">RAK833 LoRaWAN™ Gateway Concentrator Module</h6>
-              </div>
-            </div>
+      <div class="col-lg-3">
+        <div class="">
+          <h4><strong>Datasheet</strong></h4>
+          <p class="text-secondary">Detailed information about the components of the device and its functionality.</p>
         </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-6">
-        <div class="card text-center shadow mb-5 hvr-bob" >
-            <div class="card-body pt-0">
-              <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK2245-stamp-edition.svg" alt="RAK2245">
-              <div>
-                  <h6 class="card-title">RAK2245 Stamp Edition - LoRaWAN™ Gateway Concentrator Module</h6>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-6">
-        <div class="card text-center shadow mb-5 hvr-bob" >
-            <div class="card-body pt-0">
-              <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK2287.svg" alt="RAK2287">
-              <div>
-                  <h6 class="card-title">RAK2287 LoRaWAN™ Gateway Concentrator Module</h6>
-              </div>
-            </div>
-        </div>
-    </div>
-  </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-12 col-sm-6">
-        <div class="card text-center shadow mb-5 hvr-bob" >
-              <div class="card-body pt-0">
-                <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK7243.svg" alt="RAK7243">
-                <div>
-                    <h6 class="card-title">RAK7243 LoRaWAN™ Developer Gateway</h6>
-                </div>
-              </div>
-          </div>
       </div>
-      <div class="col-lg-4 col-md-12 col-sm-6">
-          <div class="card text-center shadow mb-5 hvr-bob" >
-              <div class="card-body pt-0">
-                <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK7243C.svg" alt="RAK7243C">
-                <div>
-                    <h6 class="card-title">RAK7243C LoRaWAN™ Developer Gateway</h6>
-                </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-12 col-sm-6">
-          <div class="card text-center shadow mb-5 hvr-bob" >
-              <div class="card-body pt-0">
-                <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK7244.svg" alt="RAK7244">
-                <div>
-                    <h6 class="card-title">RAK7244 LoRaWAN™ Developer Gateway</h6>
-                </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-            <div class="card-body pt-0">
-              <img class="card-img-top img-fluid" src="assets/img/lora-gateway/RAK7244C.svg" alt="RAK7244C">
-              <div>
-                  <h6 class="card-title">RAK7244C LoRaWAN™ Developer Gateway</h6>
-              </div>
-            </div>
+      <div class="col-lg-3">
+        <div class="">
+          <h4><strong>User Manual</strong></h4>
+          <p class="text-secondary">A software reference cheat sheet to help you navigate the firmware and interface of our devices.</p>
         </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-6">
-        <div class="card text-center shadow mb-5 hvr-bob" >
-            <div class="card-body pt-0">
-              <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK7249.svg" alt="RAK7249">
-              <div>
-                  <h6 class="card-title">RAK7249 <br>Macro Outdoor Gateway</h6>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-6">
-        <div class="card text-center shadow mb-5 hvr-bob" >
-            <div class="card-body pt-0">
-              <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-gateway/RAK7258.svg" alt="RAK7258">
-              <div>
-                  <h6 class="card-title">RAK7258 <br>Micro Gateway</h6>
-              </div>
-            </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="">
+          <h4><strong>Deployment Guide</strong></h4>
+          <p class="text-secondary">Practical examples and tutorials on common use cases. Contains varied documents, specifically addressing one use case.</p>
         </div>
       </div>
   </div>
-<h4 class="mt-3 pt-2 mb-4 text-muted"><strong>LoRa Nodes</strong></h4>
-<div class="row">
-  <div class="col-lg-4 col-md-12 col-sm-6">
-    <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK612.svg" alt="RAK612">
-            <div>
-                <h6 class="card-title">RAK612 <br>LoRa® Button</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK811-wisduo.svg" alt="RAK811 WisDuo">
-            <div>
-                <h6 class="card-title">RAK811 LoRa Breakout Module</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK811-wisnode.svg" alt="RAK811 WisNode">
-            <div>
-                <h6 class="card-title">RAK811 Lora® Evaluation Board<h6>
-            </div>
-          </div>
-      </div>
-    </div>
-</div>
-<div class="row">
-  <div class="col-lg-4 col-md-12 col-sm-6">
-    <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK815.svg" alt="RAK815">
-            <div>
-                <h6 class="card-title">RAK815 Hybrid Location Tracker Board</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK4200-evaluation-board.svg" alt="RAK4200">
-            <div>
-                <h6 class="card-title">RAK4200 <br>LoRa® Module</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-6">
-    <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK4260-evaluation-board.svg" alt="RAK4260 Evaluation Board">
-            <div>
-                <h6 class="card-title">RAK4260 LoRa® Evaluation Board</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK4600-evaluation-board.svg" alt="RAK4600 Evaluation Board">
-            <div>
-                <h6 class="card-title">RAK4600 LoRa® Evaluation Board</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK5205.svg" alt="RAK5205">
-            <div>
-                <h6 class="card-title">RAK5205 LoRa® Tracker Board</h6>
-            </div>
-          </div>
-      </div>
-    </div>
-<div class="col-lg-4 col-md-12 col-sm-6">
-  <div class="card text-center shadow mb-5 hvr-bob" >
-        <div class="card-body pt-0">
-          <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK7200.svg" alt="RAK7200">
-          <div>
-              <h6 class="card-title">RAK7200 <br>LoRa® Tracker</h6>
-          </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="row">
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/lora-nodes/RAK7204.svg" alt="RAK7204">
-            <div>
-                <h6 class="card-title">RAK7204 LoRa® Environmental Node</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<h4 class="mt-3 pt-2 mb-4 text-muted"><strong>NB-IoT</strong></h4>
-<div class="row">
-  <div class="col-lg-4 col-md-12 col-sm-6">
-    <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/nb-iot/RAK5010.svg" alt="RAK5010">
-            <div>
-                <h6 class="card-title">RAK5010 NB-IoT Tracker</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-6">
-      <div class="card text-center shadow mb-5 hvr-bob" >
-          <div class="card-body pt-0">
-            <img class="card-img-top img-fluid p-0 m-0" src="assets/img/nb-iot/RAK8212.svg" alt="RAK8212">
-            <div>
-                <h6 class="card-title">RAK8212 iTracker Pro</h6>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
 </div>
 </body>
 </html>
