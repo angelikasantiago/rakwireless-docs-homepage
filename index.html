@@ -10,7 +10,16 @@
       background-color: white; 
       color: black; 
       border: 2px solid #0746C6;
-      height: 60px;
+      height: 50px;
+      width: 120px;
+      border-radius: 8px;
+    }
+
+    .button-large {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #0746C6;
+      height: 50px;
       width: 150px;
       border-radius: 8px;
     }
@@ -19,6 +28,9 @@
       background-color: #0746C6;
       color: white;
     }
+    .footer {
+      background-color: #0746C6;
+    }
     </style>
   <script src="assets/lib/js/jquery.min.js"></script>
   <script src="assets/lib/js/bootstrap.min.js"></script>
@@ -26,37 +38,57 @@
 <body>
 <div class="container">
   <div class="row">
-    <div class="col">
-      <img src="assets/img/rak-blue-dark.svg" class="img-fluid">
-      <h1 class="text-center text-secondary"><strong>WELCOME TO RAK DOCUMENT CENTER</h2></strong>
-      <button class="button button mb-5" style="align-self: center;">Get Started Now</button>
+    <div class="col text-center">
+      <img src="assets/img/rak-blue-dark.svg" class="w-25 pt-5">
+      <h1 class="pb-2"><strong>WELCOME TO RAK DOCUMENT CENTER</strong></h1>
+      <button class="button button-large mb-5">Get Started Now</button>
   </div>
   <div class="row"> 
-      <div class="col-lg-3">
-          <div class="">
-            <h4><strong>Quick Start Guide</strong></h4>
-            <p class="text-secondary">A manual on how to set up your device for the first time and deploy with only its core functionality in mind.</p>
-          </div>
+      <div class="col-lg-3 col-sm-6 mt-4">
+        <h4><strong>Quick Start Guide</strong></h4>
+        <p class="text-secondary">A manual on how to set up your device for the first time and deploy with only its core functionality in mind.</p>
+        <button class="button button mb-sm-6">Learn More</button>
       </div>
-      <div class="col-lg-3">
-        <div class="">
+      <div class="col-lg-3 col-sm-6 mt-4">
           <h4><strong>Datasheet</strong></h4>
           <p class="text-secondary">Detailed information about the components of the device and its functionality.</p>
-        </div>
+          <button class="button button mt-lg-4">Learn More</button>
       </div>
-      <div class="col-lg-3">
-        <div class="">
+      <div class="col-lg-3 col-sm-6 mt-4">
           <h4><strong>User Manual</strong></h4>
           <p class="text-secondary">A software reference cheat sheet to help you navigate the firmware and interface of our devices.</p>
-        </div>
+          <button class="button button mt-lg-4">Learn More</button>
       </div>
-      <div class="col-lg-3">
-        <div class="">
+      <div class="col-lg-3 col-sm-6 mt-4">
           <h4><strong>Deployment Guide</strong></h4>
           <p class="text-secondary">Practical examples and tutorials on common use cases. Contains varied documents, specifically addressing one use case.</p>
-        </div>
+          <button class="button button">Learn More</button>
       </div>
+    </div>
   </div>
 </div>
+<footer class="footer fixed-bottom pb-lg-4 pt-lg-5">
+  <div class="container">
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-lg-2">
+        <h6><a href="#" target="_blank" class="text-light">RUI</a></h6>
+      </div>
+      <div class="col-lg-2">
+        <h6><a href="https://store.rakwireless.com/" target="_blank" class="text-light">STORE</a></h6>
+      </div>
+      <div class="col-lg-2">
+        <h6><a href="https://downloads.rakwireless.com/" target="_blank" class="text-light">DOWNLOADS</a></h6>
+      </div>
+      <div class="col-lg-2">
+        <h6><a href="#" target="_blank" class="text-light">FAQ</a></h6>
+      </div>
+      <div class="col-lg-2">
+        <h6><a href="https://forum.rakwireless.com/" target="_blank" class="text-light">FORUMS</a></h6>
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+</body>
 </body>
 </html>
